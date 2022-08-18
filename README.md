@@ -5,5 +5,5 @@ It visually shows the distribution of class or distribution of the width and hei
 
 ## :star:Results
 <figure>
-    <img src="./img/result.PNG" title="result">    
+    <img src="./img/result.png" title="result">    
 </figure>
