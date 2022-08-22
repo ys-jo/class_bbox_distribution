@@ -127,12 +127,19 @@ def plot(class_data, width_data, height_data, output):
     plt.xticks(rotation=45)
     plt.grid(True)
 
-
+    list_y = []
+    for i in range(11):
+        list_y.append(0.1*i)
+    list_x = []
+    for i in range(11):
+        list_x.append(0.1*i)
     plt.subplot(2,1,2)
     plt.scatter(width_data, height_data, s=1)
     plt.grid(True)
     plt.xlabel('width')
     plt.ylabel('height')
+    plt.yticks(list_y)
+    plt.xticks(list_x)
     plt.title("size distribution")
     plt.tight_layout()
     plt.savefig(output+'/result.png', dpi=300)
